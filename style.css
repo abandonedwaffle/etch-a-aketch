@@ -1,27 +1,30 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    box-sizing: border-box;
 
 }
 
 #container {
-    
-    height: auto;
-    width: 298px;
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
     flex-wrap: wrap;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 .square {
-    border: 1px solid black;
-    height: 16px;
-    width: 16px;
+    border: 1px solid #D3D3D3;
+    height: 20px;
+    width: 20px;
 
+}
+#container > div:nth-child(13n+1) {
+    width: 100%;
+    border: 0;
+    height: 0;
 }
