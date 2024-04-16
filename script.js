@@ -16,7 +16,8 @@ function createGrid(gridNum) {
       row.classList.add("grid-row");
 
    for (let j=0; j<gridNum; j++) {
-      const widthAndHeight = 800/gridNum;
+      const widthAndHeight = (800/gridNum);
+      
       const gridBox = document.createElement("div");
       gridBox.classList.add("grid-box");
       gridBox.style.width = `${widthAndHeight}px`;
